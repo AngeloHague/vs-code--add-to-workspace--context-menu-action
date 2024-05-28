@@ -7,6 +7,7 @@
     "type": "git",
     "url": "https://github.com/AngeloHague/vs-code--add-to-workspace--context-menu-action"
   },
+  "license": "MIT",
   "engines": {
     "vscode": "^1.89.0"
   },
