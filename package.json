@@ -1,0 +1,47 @@
+{
+  "name": "angelohague-add-to-workspace--context-menu-action",
+  "displayName": "\"Add to Workspace\" Context Menu Action",
+  "description": "Adds an option to the context menu to easily add a folder to workspace.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.89.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:angelohague-add-to-workspace--context-menu-action.addFolderToWorkspace"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "angelohague-add-to-workspace--context-menu-action.addFolderToWorkspace",
+        "title": "Add Selected Folder to Workspace"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "angelohague-add-to-workspace--context-menu-action.addFolderToWorkspace",
+          "when": "resourceScheme == 'file'",
+          "group": "navigation@200"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.89.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
