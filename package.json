@@ -3,6 +3,10 @@
   "displayName": "\"Add to Workspace\" Context Menu Action",
   "description": "Adds an option to the context menu to easily add a folder to workspace.",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AngeloHague/vs-code--add-to-workspace--context-menu-action"
+  },
   "engines": {
     "vscode": "^1.89.0"
   },
